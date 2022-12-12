@@ -17,6 +17,7 @@ const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handle
   <div className="w-full flex flex-row items-center hover:bg-[#4c426e] py-2 p-4 rounded-lg cursor-pointer mb-2">
     <h3 className="font-bold text-base text-white mr-3">{i + 1}.</h3>
     <div className="flex-1 flex flex-row justify-between items-center">
+
       <img className="w-20 h-20 rounded-lg" src={song?.images?.coverart} alt={song?.title} />
 
       <div className="flex-1 flex flex-col justify-center mx-3">
@@ -25,7 +26,7 @@ const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handle
         </Link>
 
         <Link to={`/artists/${song?.artists[0].adamid}`}>
-          <p className="text-ase font-bold text-gray-300 mt-1">{song?.subtitle}</p>
+          <p className="text-base font-bold text-gray-300 mt-1">{song?.subtitle}</p>
         </Link>
       </div>
     </div>
@@ -74,7 +75,7 @@ const TopPlay = () => {
           </Link>
         </div>
 
-        <div className="mt-4 flex flex-col gap-1">
+        <div className="mt-2 flex flex-col gap-0">
           {topPlays?.map((song, i) => (
             <TopChartCard
               key={song.key}
@@ -90,9 +91,9 @@ const TopPlay = () => {
       </div>
 
       {/* top artista */}
-      <div className="w-full flex flex-col mt-8">
+      <div className="w-full flex flex-col mt-4">
         <div className="flex flex-row justify-between items-center">
-          <h2 className="text-white font-bold text-2xl">Top Artista</h2>
+          <h2 className="text-white font-bold text-1xl">Top Artista</h2>
           <Link to="/top-charts">
             <p className="text-gray-300 text-base cursor-pointer">Ver mais</p>
           </Link>
