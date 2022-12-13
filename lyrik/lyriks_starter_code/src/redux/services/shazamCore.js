@@ -24,5 +24,5 @@ export const {
     useGetTopChartsQuery,
     useGetSongDetailsQuery,
     useGetSongRelatedQuery,
-    useGetArtistDetailsQuery,
+    useGetArtistDetailsQuery,    
 } = shazamCoreApi;
