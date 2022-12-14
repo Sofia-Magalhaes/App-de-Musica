@@ -1,3 +1,6 @@
+/* eslint-disable */
+
+
 const Search = () => (
   <div>Search</div>
 );
