@@ -15,9 +15,6 @@ App de música.
 </div>
 
 <hr>
-Link of the project on Youtube
-
-[Build and Deploy a Better Spotify 2.0 Clone Music App with React 18! (Tailwind, Redux, RapidAPI)](https://www.youtube.com/watch?v=I1cpb0tYV74&list=PLmmn2ahLYVG91p1eEwSmp1xN-7q1zn2Xi)
 
 
 
